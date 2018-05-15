@@ -17,7 +17,7 @@
 #ifndef _IMAGEVIEW_PRIVATE_HH_
 #define _IMAGEVIEW_PRIVATE_HH_
 
-#include "gazebo/gui/viewers/ImageFrame.hh"
+#include "ImageFrame.hh"
 
 namespace gazebo
 {
