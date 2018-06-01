@@ -7,6 +7,13 @@
 
 int main(int argc, char **argv)  
 {
+	if (argc == 1){
+		std::cout << "You must specify the ImageStamped topic as an argument\n";
+		return 0;
+	} 	
+
+
+	
 	gazebo::client::setup(argc, argv);
 	QApplication app(argc, argv);
 
@@ -14,7 +21,7 @@ int main(int argc, char **argv)
 	window.resize(100, 100);
 	std::cout << "Creating window\n";
 	std::string msgType = "gazebo.msgs.ImageStamped";
-	std::string topic = "/gazebo/default/iris_demo/iris_demo/gimbal_2d/tilt_link/camera/image";
+	std::string topic = argv[1];//"/gazebo/default/iris_demo/iris_demo/gimbal_2d/tilt_link/camera/image";
 	//gazebo::gui::ImageView mainView(&window);
 	//
 	gazebo::gui::ViewFactory::RegisterAll();
