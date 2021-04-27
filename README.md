@@ -14,3 +14,5 @@ be run without the overhead of the entire Gazebo GUI.
 4. `make` which will produce VidRecv
 
 
+You must have a model that has a camera so the Camera Image can be subscribed to
+ie /gazebo/default/iris_demo/iris_demo/gimbal_2d/tilt_link/camera/image
